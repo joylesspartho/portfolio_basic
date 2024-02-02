@@ -1,0 +1,461 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="card view">
+<meta name="keywords" content="HTML,CSS">
+<meta name="author" content="Partho">
+<meta http-equiv="refresh" content="30">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="portfolio icon.jpeg">
+
+<title> portfolio  </title>
+
+<script src="https://kit.fontawesome.com/de4bb45f84.js" crossorigin="anonymous"></script>
+<style>
+    
+    /*body{
+        
+        background-image: url('cat walpaper gif.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(235, 228, 190);
+        
+    }*/
+
+    body{
+        
+        color: rgb(241, 228, 221);
+        background-image: linear-gradient(rgb(102, 104, 104),rgb(47, 51, 49));
+    }
+
+    .parent{
+
+        display: flex;
+        margin-top: 20px;
+        
+
+
+    }
+    .boxparent{
+        display: flex;
+        margin-top: -100px;
+
+    }
+    .child-left{
+
+       margin-top: 110px;
+       margin-left: 200px;
+       padding: 2%;
+       
+       
+    }
+    h1{
+        color: rgb(15, 0, 20);
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(18, 16, 192);
+        font-size: 28pt;
+        font-weight: bold;
+    }
+    #h{
+        border: 2px solid wheat;
+        background-color: chartreuse;
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 3px;
+        text-decoration: none;
+        margin-top: 2%;
+        
+
+    }
+    #h:hover{
+        background-color:rgb(36, 219, 51);
+    }
+    .child-right{
+        margin-top: 90px;
+        margin-left: 220px;
+        margin-right: -8px;
+        width: 1000px;
+        height: 400px;
+        border-top: 1px solid rgb(233, 19, 54) ;
+        border-left: 1px solid rgb(233, 19, 54);
+        border-bottom: 1px solid rgb(233, 19, 54);
+        box-shadow: 0px 0px 20px rgb(247, 246, 246);
+        border-radius: 20px 0px 0px 20px;
+        
+        
+        
+    }
+    #rphoto{
+        display: block;
+        margin-left: 200px;
+        margin-top: 20px;
+        border-radius: 50px;
+    }
+    img{
+        border-radius: 50%;
+    }
+    
+    
+    .child-left1{
+        margin-top: 120px;
+        margin-left: 9%;
+    }
+    .child-right1{
+        margin-top: 150px;
+        padding-left: 15%;
+        padding-right: 5%;
+        margin-left: 3%;
+    }
+    .section3{
+        margin-top: -50px;
+        
+    }
+    
+    .padding{
+        padding: 10%;
+        text-align: center;
+    }
+    .box1{
+     box-sizing: border-box;
+     background-image: url("uiux.jpg");
+     width: 30%;
+     height: 300px;
+	 margin: 80px;
+	 border-left: 5px solid red;
+	 border-radius: 0px 10px 10px 0px;
+	 padding: 5px;
+	 text-align: justify;
+	 box-shadow: 2px 2px 20px rgb(247, 246, 246);
+     color: brown;
+     font-size: 14pt;
+
+     transition: transform 0.4s ;
+     
+     
+    }
+
+    .box2{
+     box-sizing: border-box;
+     background-image: url("webdevelopment.jpg");
+     width: 30%;
+	 margin: 80px;
+	 border-left: 5px solid red;
+	 border-radius: 0px 10px 10px 0px;
+	 padding: 5px;
+	 text-align: justify;
+	 box-shadow: 2px 2px 20px rgb(247, 246, 246);
+     color: brown;
+     font-size: 14pt;
+     
+     transition: transform 0.4s ;
+     
+    }
+    .box3{
+     box-sizing: border-box;
+     background-image: url("appdevelopment.jpg");
+     width: 30%;
+	 margin: 80px;
+	 border-left: 5px solid red;
+	 border-radius: 0px 10px 10px 0px;
+	 padding: 5px;
+	 text-align: justify;
+	 box-shadow: 2px 2px 20px rgb(247, 246, 246);
+     color: brown;
+     font-size: 14pt;
+     
+     transition: transform 0.4s ;
+     
+    }
+    .center{
+        text-align: center;
+        color: blueviolet;
+        
+    }
+    .textsz{
+        font-size: 20pt;
+        
+    }
+
+    .menu{
+        position: sticky;
+        top: -5px;
+        opacity: 0.95;
+        margin-left: -150px;
+        border-bottom: 1px solid rgb(197, 12, 12);
+        width: 100%;
+        border-radius: 0px 10px 10px 0px;
+        
+        box-shadow: 0px 0px 20px rgb(247, 246, 246);
+      
+        
+        display: flex;
+        direction: rtl;
+        background-color: rgb(45, 46, 46);
+        
+        
+    }
+    .anchor{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        
+        
+        color: rgb(249, 249, 250);
+        filter: blur(2px);
+        
+        font-size: 16pt;
+        margin-right: 30px;
+    }
+    
+    
+    
+    .anchor:hover{
+    
+        background-color:rgb(216, 9, 37);
+        filter: none;
+        text-decoration: underline;
+        
+
+    }
+    .allign{
+        margin-left: 50%;
+    }
+
+    .icondiv{
+        position: fixed;
+        background-color: aquamarine;
+        top: 200px;
+        width: 50px;
+        height: 150px;
+        border-radius: 20px;
+        
+
+    }
+    .resize{
+        display: block;
+        margin-top: 20px;
+        margin-left: 15px;
+        font-size: 20px;
+    }
+    .line{
+        position: absolute;
+        left: 15%;
+        top: -5px;
+        width: 5px;
+        height: 754px;
+        border-radius: 0% 0% 50% 50%;
+        background-color: rgb(83, 236, 142);
+       
+        
+        
+    }
+    .specialize{
+        display: flex;
+        box-sizing: border-box;
+        position: relative;
+        left: 15%;
+        right: 15%;
+        text-align: center;
+        width: 70%;
+        border: 1px solid rgb(216, 9, 37);
+        box-shadow: 2px 2px 20px rgb(247, 246, 246);
+
+    }
+    .distance{
+
+        margin-left: 10px;
+    }
+    .specializediv{
+     margin: 20px;
+    }
+    .fotter{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        box-sizing: border-box;
+        
+    }
+    
+    .box1:hover, .box2:hover, .box3:hover{
+        transform: scale(1.1);
+        
+    }
+
+    .content{
+        display: flex;
+        position: absolute;
+        top: 282%;
+        
+    }
+    
+    
+    
+    
+    
+
+
+</style>
+
+</head>
+
+<body>
+    <div class="line">
+
+    </div>
+    
+    <div class="menu">
+         <a class="anchor" href="img.html ">work experience</a> 
+         <a class="anchor" href=" ">about</a> 
+         <a class="anchor" href="https://drive.google.com/file/d/1oa8Y0NrUgoDYRQqXNADgOBg0xdoQQRRU/view?usp=drive_link">Resume</a>
+         <a class="anchor" href="http://127.0.0.1:5500/portfolio.html ">home</a>
+       
+        
+        
+    </div>
+<section class="parent">
+    <div class="child-left">
+        <h1>HELLOW</h1>
+        <h1>I am Partho</h1>
+        <p class="textsz">Web & Apps Developer</p>
+        <a id="h" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox ">Let's Talk</a>
+    </div>
+
+    <div class="child-right">
+       <img  id="rphoto" src="partho.png" height="300px" width="250px" >
+    </div>
+</section>
+
+<section class="parent">
+
+    <div class="child-left1">
+        <img src="parth.jpg" width="400px" height="400px">
+    </div>
+
+    <div class="child-right1">
+        <h1>About me</h1>
+        <p class="textsz">
+            Hellow, I'am web & mobile apps developer from
+            Saidpur,Nilphamari,Bangladesh. I create efficient
+            & innovative experience that i user needs and business
+            goal.
+        </p>
+        <a id="h" href=" ">Hire Me</a>
+    </div>
+
+
+
+</section>
+
+<section class="section3">
+
+    <div class="padding">
+        <h1 >Specializing in</h1>
+        <p class="textsz">
+            I specialize in developing mobile applications and websites, 
+            encompassing information systems, responsive UI/UX design, 
+            meticulous diagram creation for better understanding, integrated coding, 
+            and thorough testing in conjunction with the 
+            Software Development Life Cycle (SDLC).  
+        </p>
+    </div>
+
+    
+    <div class="content">
+        <p style="margin-left: 170px;">UI/UX Design</p>
+        <p style="margin-left: 320px;">Web Designer/Developer</p>
+        <p style="margin-left: 270px;">Mobile Application Developer</p>
+    </div>
+    
+    <div class="boxparent">
+        
+        <div class="box1">
+
+           
+           
+        </div>
+       
+        <div class="box2">
+           
+        </div>
+        
+        <div class="box3">
+            
+        </div>
+    </div>
+
+
+    <div class="specialize">
+
+        <div class="specializediv">
+            <img class="distance" src="c.jpeg" width="80px" height="80px">
+            <img class="distance" src="java.png" width="80px" height="80px">
+            <img class="distance" src="html.png" width="80px" height="80px">
+            <img class="distance" src="css.png" width="80px" height="80px">
+            <img class="distance" src="js.png" width="80px" height="80px">
+            <img class="distance" src="php.png" width="80px" height="80px">
+            <img class="distance" src="apache.png" width="80px" height="80px">
+            <img class="distance" src="sql.png" width="80px" height="80px">
+            <img class="distance" src="oracol.png" width="80px" height="80px">
+            <img class="distance" src="xampp.jpeg" width="80px" height="80px">
+            <img class="distance" src="draw.io.png" width="80px" height="80px">
+            <img class="distance" src="download.png" width="80px" height="80px">
+            <img class="distance" src="code blocks.jpeg" width="80px" height="80px">
+            <img class="distance" src="netbeans.jpeg" width="80px" height="80px">
+            <img class="distance" src="npp.png" width="80px" height="80px">
+            <img class="distance" src="vs code.png" width="80px" height="80px">
+            <img class="distance" src="andriod studio.png" width="80px" height="80px">
+            <img class="distance" src="firebase.png" width="80px" height="80px">
+            <img class="distance" src="selenium.png" width="80px" height="80px">
+            <img class="distance" src="cisco packet tracer.jpeg" width="80px" height="80px">
+    
+
+
+        </div>
+
+       
+    </div>
+
+</section>
+
+<div class="icondiv">
+
+    <span class="resize">
+        <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+    </span>
+    <span class="resize">
+        <a href=" ">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        
+    </span>
+    <span class="resize">
+        <a href=" ">
+            <i class="fa-solid fa-house"></i>
+        </a>
+            
+        
+        
+    </span>
+    
+</div>
+
+
+<footer>
+    <div class="fotter">
+
+        create by: Mr. Partho <br>
+        E-mail: joylesspartho@gmail.com
+
+    </div>
+   
+</footer>
+</body>
+
+
+
+</html>
